@@ -1,0 +1,40 @@
+/**
+------------- Global Colors for our Landing Page ------------------------
+
+**/
+
+
+/* interactive element color */
+
+.interactive_Element,
+.highlighted_element {
+    color: #5BC8AF;
+}
+
+
+/* Background color for tip */
+
+.tip_background_color {
+    background-color: #297C6B;
+}
+
+
+/* gradient variant color */
+
+.gradient_varition_color {
+    background-color: #194D44;
+}
+
+
+/* Main Text Color */
+
+.main_text_color {
+    color: #333333;
+}
+
+
+/* Faded Element color */
+
+.faded_element_color {
+    color: #EAEAEA;
+}

@@ -1,0 +1,341 @@
+/* ======================= CSS For Generic Elements ============================= */
+
+@font-face {
+    font-family: montserratBold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+
+/* over riding input styling   */
+
+.form-control,
+.form-select {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 1) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.form-outline .form-control~.form-label {
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px !important;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-leading {
+    border-top: .125rem solid #FFFFFF;
+    border-bottom: .125rem solid #FFFFFF;
+    border-left: .125rem solid #FFFFFF;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-middle {
+    border-bottom: .125rem solid;
+    border-color: #FFFFFF;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-trailing {
+    border-color: currentcolor currentcolor currentcolor #FFFFFF;
+    border-bottom: .125rem solid #FFFFFF;
+    border-right: .125rem solid #FFFFFF;
+    border-top: .125rem solid #FFFFFF;
+}
+
+.form-outline .form-control:focus~.form-label {
+    color: #FFFFFF;
+}
+
+
+/* submit button styling */
+
+.submit-button {
+    background: #5BC8AF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 16px !important;
+    text-transform: none;
+}
+
+.submit-button:hover {
+    box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.08);
+    color: #FFFFFF;
+}
+
+.submit-button:focus {
+    background: #35BB9C;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08) !important;
+    color: #FFFFFF;
+}
+
+select>option {
+    background-color: #2A7D6C !important;
+}
+
+select>option {
+    background-color: #3a3a3a !important;
+}
+
+
+/* send-icon */
+
+.send-icon {
+    width: 15px;
+}
+
+
+/* form validation errors styling and customization */
+
+.invalid-tooltip {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* or 154% */
+    color: #FFFFFF;
+    background-color: rgba(255, 119, 119, 1);
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.08));
+    margin-top: 8px;
+    border-radius: 8px !important;
+}
+
+.invalid-tooltip:before {
+    position: absolute;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+    top: -5px;
+    left: 70px;
+    border-width: 0 .4rem .4rem;
+    border-bottom-color: rgba(255, 119, 119, 1)
+}
+
+
+/* ===================================== Custom Bootstrap Slider  ================================================= */
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
+}
+
+.slider-description-box {
+    background: #194D44;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 269px;
+}
+
+.slider-heading {
+    font-family: 'montserratBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    /* identical to box height, or 142% */
+    color: #FFFFFF;
+}
+
+.slider-para {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 156% */
+    color: #FFFFFF;
+}
+
+.slider-custom-image {
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.12));
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 269px;
+}
+
+
+/* customize slider indicators */
+
+.carousel-indicators {
+    margin-bottom: 0rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #EAEAEA !important;
+    width: 1.3%;
+    height: 10px;
+    border-radius: 50% !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-clip: unset !important; */
+}
+
+.carousel-indicators .active {
+    background-color: #5BC8AF !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../graphics/left-arrow.svg) !important;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    transition: all 0.5s ease;
+}
+
+.carousel-control-prev-icon:hover {
+    background-image: url(../graphics/left-arrow-green.svg) !important;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: none;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../graphics/right-arrow.svg) !important;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    transition: all 0.5s ease;
+}
+
+.carousel-control-next-icon:hover {
+    background-image: url(../graphics/right-arrow-green.svg) !important;
+}
+
+
+/* ===================================== Custom Bootstrap Slider  End ================================================= */
+
+
+/* ===================================== After slider section-buttons  ================================================= */
+
+.after-slider-section-button {
+    border: 2px solid #5BC8AF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: none;
+    font-family: 'montserratBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    /* line-height: 28px; */
+    /* or 156% */
+    align-items: center;
+    text-align: center;
+    color: rgba(51, 51, 51, 1);
+    text-transform: none;
+}
+
+.after-slider-section-button:hover {
+    box-shadow: none;
+    color: rgba(91, 200, 175, 1);
+}
+
+.info-icon {
+    display: none;
+}
+
+.after-slider-section-button:hover .info-icon {
+    display: inline-block;
+}
+
+
+/* custom bootstrap tooltip */
+
+.tooltip-inner {
+    color: #fff;
+    padding: 16px;
+    background-color: #297C6B;
+    border-radius: .25rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.tooltip-arrow:before {
+    border-top-color: #297C6B !important;
+    border-bottom-color: #297C6B !important;
+}
+
+
+/* ===================================== After slider section-buttons end  ================================================= */
+
+
+/* ===================================== Video Section Elements CSS  ================================================= */
+
+.check-icon {
+    color: #5BC8AF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    /* #FFFFFF */
+}
+
+.play-button {
+    background-image: url(../graphics/play-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: none;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+    transition: transform .5s ease;
+    width: 208px;
+    height: 208px;
+}
+
+.play-button:hover {
+    box-shadow: none;
+    transform: scale(1.2) !important;
+}
+
+.btn.active,
+.btn.active:focus,
+.btn.focus,
+.btn:active,
+.btn:active:focus,
+.btn:focus,
+.btn:hover {
+    box-shadow: none;
+}
+
+
+/* text stroke for outlining text elements */
+
+.text-stroke {
+    -webkit-text-stroke: 1px rgba(51, 51, 51, 1);
+    color: transparent;
+}
+
+.text-stroke-white {
+    -webkit-text-stroke: 1px rgba(225, 225, 225, 1);
+    color: transparent;
+}
+
+.modal {
+    z-index: 1000000;
+}
+
+
+/* ===================================== Video Section Elements CSS ENd  ================================================= */
